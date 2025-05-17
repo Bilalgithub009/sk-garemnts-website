@@ -23,6 +23,7 @@ function App() {
    <Carousalha/>
     <Hero/>
     <Cards/>
+    <Testimonials/>
 
       <Routes>
         <Route path="/"   />        
