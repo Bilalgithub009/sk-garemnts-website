@@ -8,8 +8,8 @@ import Testimonials from "./components/Testimonial";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 // import ProductDetail from "./components/ProductDetail";
-import { Route, Routes } from "react-router";
-import ProductDetail from "./components/ProductDetail";
+// import { Route, Routes } from "react-router";
+// import ProductDetail from "./components/ProductDetail";
 
 
 
@@ -24,14 +24,14 @@ function App() {
     <Hero/>
     <Cards/>
     <Testimonials/>
-
+{/* 
       <Routes>
         <Route path="/"   />        
          <Route path="/product-detail" element={<ProductDetail />} />
          <Route path="/testimonials" element={<Testimonials />} /> 
          <Route path="/carousalha" element={<Carousalha />} /> 
         <Route path="/hero" element={<Hero />} />
-      </Routes>
+      </Routes> */}
    <div>
 
 

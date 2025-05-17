@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 
 const productData = [
   {
@@ -48,7 +48,7 @@ const productData = [
 
 function Cards() {
   const [visibleCount, setVisibleCount] = useState(3);
-  const navigate = useNavigate();
+  const navigate = useNavigate
 
   const handleAddToCart = () => {
     navigate("/product-detail");
