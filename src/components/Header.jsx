@@ -1,8 +1,13 @@
 import { Button } from "antd";
 import { Menu, X } from "lucide-react";
+// import { useContext } from "react";
 import { useState } from "react";
+// import { Link } from "react-router";
+// import { themecontext } from "../context/Themecontext";
 
 function Header() {
+  // const themeobj = useContext(themecontext);
+  // console.log("themeobj", themeobj)
   const [isOpen, setIsOpen] = useState(false);
   const [islogin, setlogin] = useState(false);
 
@@ -70,7 +75,9 @@ function Header() {
       {isOpen && (
         <div className="md:hidden bg-white shadow-inner border-t border-gray-200">
           <nav className="flex flex-col px-6 py-4 space-y-3 text-base font-medium text-gray-700">
-            {["Home", "Products", "About", "Contact"].map((item) => (
+            {["Home", 
+             "Products",
+             "About", "Contact"].map((item) => (
               <a
                 key={item}
                 href="#"

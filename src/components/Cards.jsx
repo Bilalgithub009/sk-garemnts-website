@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router";
+// import { Link, Navigate, useNavigate } from "react-router";
 
 const productData = [
   {
@@ -48,10 +49,12 @@ const productData = [
 
 function Cards() {
   const [visibleCount, setVisibleCount] = useState(3);
-  const navigate = useNavigate
+  // const navigate = useNavigate();
 
   const handleAddToCart = () => {
-    navigate("/product-detail");
+    // navigate("/testimonial");
+
+    // alert("Product added to cart!");
   };
 
   const handleShowMore = () => {
@@ -110,13 +113,18 @@ function Cards() {
               </div>
 
               <div className="flex justify-between mt-6 gap-2">
-                <button
-                  onClick={handleAddToCart}
+                
+                 <button
+                  onClick={(handleAddToCart)}
                   className="w-1/2 bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-full transition"
                 >
                   Add to Cart
                 </button>
-                <button className="w-1/2 bg-green-600 hover:bg-green-700 text-white py-2 rounded-full transition">
+                
+                
+                <button
+                  // onClick={() => navigate("/testimonial")}
+                 className="w-1/2 bg-green-600 hover:bg-green-700 text-white py-2 rounded-full transition">
                   Buy Now
                 </button>
               </div>
@@ -127,12 +135,14 @@ function Cards() {
 
       <div className="flex justify-center mt-12 gap-4">
         {visibleCount < productData.length && (
+          
           <button
             onClick={handleShowMore}
             className="bg-blue-700 hover:bg-blue-900 text-white px-6 py-3 rounded-full shadow-md transition"
-          >
+            >
             Show More
           </button>
+            
         )}
         {visibleCount > 3 && (
           <button
