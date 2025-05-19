@@ -66,12 +66,12 @@ function App() {
 
       <div className="App">
         {/* 🧾 Your full SK Garment website goes here */}
-        {/* <Header />
+        <Header />
         <Carousalha />
         <Hero />
         <Cards />
         <Testimonials />
-        <ContactSection/> */}
+        <ContactSection/>
         {/* <Signin/> */}
 
       </div>
