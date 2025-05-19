@@ -7,6 +7,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from "react";
 import { InfinitySpin } from 'react-loader-spinner';
+import ContactSection from "./components/Contact";
+import { BrowserRouter, Route, Routes } from "react-router";
+import Signin from "./components/pages/Signin";
+import Signup from "./components/pages/Signup";
 
 
 
@@ -46,14 +50,29 @@ function App() {
 
   return (
     <>
+         <BrowserRouter>
+         <Routes>
+          <Route path="/signin" element={<Signin/>}/>
+          <Route path="/signup" element={<Signup/>}/>
+
+
+
+         </Routes>
+         
+         </BrowserRouter>
+
+
+
 
       <div className="App">
         {/* 🧾 Your full SK Garment website goes here */}
-        <Header />
+        {/* <Header />
         <Carousalha />
         <Hero />
         <Cards />
         <Testimonials />
+        <ContactSection/> */}
+        {/* <Signin/> */}
 
       </div>
 
