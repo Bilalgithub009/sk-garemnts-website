@@ -1,19 +1,21 @@
-// src/components/ContactSection.jsx
 import React from "react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const ContactSection = () => {
   return (
-    <section className="bg-blue-50 py-20 px-4 sm:px-6 lg:px-8 animate-fadeIn">
+    <section className="bg-blue-50 py-16 px-4 sm:px-6 lg:px-8 animate-fadeIn relative">
       <div className="max-w-4xl mx-auto text-center">
-  <h2 className="text-4xl font-bold text-black mb-4">Contact Us SK <span className="text-blue-600">Garments Team</span></h2>
+        <h2 className="text-2xl sm:text-4xl font-bold text-black mb-4">
+          Contact Us SK <span className="text-blue-600">Garments Team</span>
+        </h2>
 
-  <p className="text-gray-700 font-bold text-xl">
-    We’d love to hear from you — whether it’s about sizes, custom orders, or just feedback on our latest styles. Team SK Garments is here for you!
-  </p>
-</div>
+        <p className="text-black font-semibold text-lg sm:text-xl">
+          We’d love to hear from you — whether it’s about sizes, custom orders, 
+          or just feedback on our latest styles. Team SK Garments is here for you!
+        </p>
+      </div>
 
-
-      <div className="max-w-3xl mx-auto mt-12 bg-white p-8 rounded-xl shadow-lg">
+      <div className="max-w-3xl mx-auto mt-12 bg-white p-4 sm:p-8 rounded-xl shadow-lg">
         <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
@@ -53,10 +55,20 @@ const ContactSection = () => {
         </form>
 
         <div className="mt-10 text-center text-gray-600 text-sm">
-          <p className="mx-auto">Email: <a href="mailto:info@example.com" className="text-blue-500">saad khan@gmail.com</a></p>
-          <p className="mt-4"> <span className="text-blue-600">Address:</span> Near Al Falah Masjid Bhangoriya Goth Karachi, Pakistan</p>
+          <p>Email: <a href="mailto:skgarments@gmail.com" className="text-blue-500">skgarments@gmail.com</a></p>
+          <p className="mt-3"><span className="text-blue-600">Address:</span> Near Al Falah Masjid Bhangoriya Goth Karachi, Pakistan</p>
         </div>
       </div>
+
+      {/* WhatsApp Floating Button */}
+      <a
+        href="https://wa.me/923190266227" // <-- Apna WhatsApp number daal do (923.. format me)
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition duration-300 flex items-center justify-center z-50"
+      >
+        <FaWhatsapp className="text-3xl" />
+      </a>
     </section>
   );
 };

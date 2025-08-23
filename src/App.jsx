@@ -11,6 +11,8 @@ import ContactSection from "./components/Contact";
 import { BrowserRouter, Route, Routes } from "react-router";
 import Signin from "./components/pages/Signin";
 import Signup from "./components/pages/Signup";
+import Footer from "./components/Footer";
+import FeedbackPopup from "./components/cardPopup";
 
 
 
@@ -50,6 +52,9 @@ function App() {
 
   return (
     <>
+
+       <FeedbackPopup/>
+
          <BrowserRouter>
          <Routes>
           <Route path="/signin" element={<Signin/>}/>
@@ -67,14 +72,16 @@ function App() {
       <div className="App">
         {/* 🧾 Your full SK Garment website goes here */}
         <Header />
+     
         <Carousalha />
         <Hero />
         <Cards />
         <Testimonials />
         <ContactSection/>
-        {/* <Signin/> */}
-
+        <Footer/>
       </div>
+
+      
 
 
 
