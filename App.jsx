@@ -43,6 +43,7 @@ function App() {
           visible={true}
           width="200"
           color="#007bff"
+
           ariaLabel="grid-loading"
         />
       </div>
