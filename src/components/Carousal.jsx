@@ -36,7 +36,7 @@ function Carousalha() {
             />
 
             <div className="absolute top-0 left-0 w-full h-full bg-black/40 flex flex-col justify-center items-center text-white px-6">
-              <h2 className="text-2xl md:text-5xl font-extrabold mb-3 drop-shadow-lg">
+              <h2 className="text-2xl md:text-5xl font-extrabold mb-2 drop-shadow-lg">
                 {item.title}
               </h2>
               <p className="text-sm md:text-lg max-w-[700px] mb-5 opacity-90">
